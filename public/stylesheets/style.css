@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f4f4f4;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+.finalizar {
+  background-color: #434343;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  color: white;
+  border: none;
+  display: block;
+  cursor: pointer;
+  width: 170px;
+}
+
+.email {
+  position: relative;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: white;
+  width: 200px;
+  height: 30px;
+  border: none;
+  margin: -50px auto;
+  display: block;
+  color: black;
+}
+
+.senha {
+  position: relative;
+  padding: 12px 24px;
+  border-radius: 10px;
+  margin-top: 35px;
+  color: white;
+  margin: 80px auto;
+  width: 200px;
+  height: 30px;
+  border: none;
+  color: black;
+}
+
+.confirmar {
+  position: relative;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: black;
+  width: 200px;
+  height: 30px;
+  border: none;
+  margin: -30px auto;
+  display: block;
+}
+
+
+
+.caixa-login {
+
+  background-color: #676767;
+  width: 400px;
+  height: 578px;
+  text-align: center;
+  border-radius: 12px;  
+  margin: 100px auto;
+  padding: 40px 0;
+
+}
+.logo {
+  width: 230px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
