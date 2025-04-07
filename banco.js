@@ -33,7 +33,8 @@ async function buscarUsuario(usuario)
     const conexao = await conectarBD();
     const sql = "select * from usuario where emailUsuario=? and senhaUsuario=?;";
     const [usuarioEcontrado] = await conexao.query(sql,[usuario.email, usuario.senha]);
-    return usuarioEcontrado && usuarioEcontrado.length>0 ? usuarioEcontrado[0] : {};
+    return usuarioEcontrado && usuarioEcontrado.length > 0 ? usuarioEcontrado[0] : null;
+
 }
 
 conectarBD()

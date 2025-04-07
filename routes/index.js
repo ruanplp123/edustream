@@ -35,16 +35,21 @@ router.get('/login', function(req, res, next) {
   res.sendFile(path.join(__dirname, '../public/login.html'));
 });
 
-router.post('/login', async function(req, res, next){
-  const email = req.body.email ;
-  const senha = req.body.senha;
+router.post('/login', async function(req, res, next) {
+  const email = req.body.email.trim();
+  const senha = req.body.senha.trim();
 
-  const usuario = await global.banco.buscarUsuario({email,senha});
+  const usuario = await global.banco.buscarUsuario({ email, senha });
+
+  if (!usuario) {
+    console.log('Login inválido!');
+    return res.send('Email ou senha incorretos'); // ou: res.redirect('/login');
+  }
 
   global.usuarioCodigo = usuario.idUsuario;
   global.usuarioEmail = usuario.emailUsuario;
   res.redirect('home');
-})
+});
 
 
 
